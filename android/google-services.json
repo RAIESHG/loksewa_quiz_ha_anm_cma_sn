@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "130640162437",
+    "project_id": "loksewa-ebbce",
+    "storage_bucket": "loksewa-ebbce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130640162437:android:7ab0e3b309e896c35083ec",
+        "android_client_info": {
+          "package_name": "com.example.loksewa_quiz_ha_anm_cma_sn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130640162437-ndh6ifquspu7stm5k18doth2nubiq4or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1l-68M5tUukJD-rO8zTkZ1Y59v5T5q78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130640162437-ndh6ifquspu7stm5k18doth2nubiq4or.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
