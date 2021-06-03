@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loksewa_quiz_ha_anm_cma_sn/ReuseableCodes/loadingscreen.dart';
 import 'package:loksewa_quiz_ha_anm_cma_sn/ReuseableCodes/textstyling.dart';
+import 'package:loksewa_quiz_ha_anm_cma_sn/adminpanel/addquestion.dart';
 import 'package:loksewa_quiz_ha_anm_cma_sn/datalayer/database.dart';
 import 'package:lottie/lottie.dart';
 
@@ -32,7 +33,7 @@ class _HomepageState extends State<Homepage> {
                   onPressed: (){
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Quiz()),);
+                    MaterialPageRoute(builder: (context) => Quiz()),);  // AddQuestions() for admin - Quiz() for user
                   },
                   child: TextS(text:"Let's Start", size: 2.5,color:Colors.white)),
                 ),
