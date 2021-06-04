@@ -30,7 +30,7 @@ class _QuizState extends State<Quiz> {
     return Scaffold(
         appBar: AppBar(title: Center(child: TextS(text:'Question${value}',size:3,color:Colors.white),)),
         body: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+          padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
           child: ListView(
             children: [
               Center(
@@ -38,7 +38,7 @@ class _QuizState extends State<Quiz> {
                   crossAxisAlignment: CrossAxisAlignment.center
                   ,
                   children: [
-                    SizedBox(height: MediaQuery.of(context).size.height*0.04,),
+                    SizedBox(height: MediaQuery.of(context).size.height*0.01,),
                     TextS(text:'${questions[initialindex]['quiz']}',size: 2.1,color: textColor),
                     SizedBox(height:MediaQuery.of(context).size.height*0.03),
                     _options(initialindex, 0),
@@ -141,6 +141,9 @@ class _QuizState extends State<Quiz> {
                   
                     width: 2.5,
                     color: Colors.blue.withOpacity(0.7))),
-            child: TextS(text:'${questions[initialindex]['option'][index]}',size: 1.2,color: textColor)));
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextS(text:'${questions[initialindex]['option'][index]}',size: 1.2,color: textColor),
+            )));
   }
 }

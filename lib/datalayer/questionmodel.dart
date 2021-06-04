@@ -11,8 +11,8 @@ class QuestionModel {
 
     questions= data['allquestions'];
     questions.shuffle();
-    if(questions.length>10){
-    questions.removeRange(10, questions.length);}
+    if(questions.length>50){
+    questions.removeRange(50, questions.length);}
     else if(questions.length==0){
       questions=[{'quiz':'No Question currently please wait for some time','option':['-','-','-','-'],'answer_index':0}];
     }
