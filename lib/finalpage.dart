@@ -37,7 +37,7 @@ class _FinalPageState extends State<FinalPage> {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => Homepage()),);
-        }, child: TextS(text:"Go To Home Page",size:2.5,color:Colors.white))
+        }, child: TextS(text:"Try Different Set",size:2.5,color:Colors.white))
       ],
     ));
   }
