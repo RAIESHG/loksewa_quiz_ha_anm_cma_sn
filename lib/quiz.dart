@@ -31,7 +31,7 @@ class _QuizState extends State<Quiz> {
         appBar: AppBar(title: Center(child: TextS(text:'Question${value}',size:3,color:Colors.white),)),
         body: Padding(
           padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-          child: Column(
+          child: ListView(
             children: [
               Center(
                 child: Column(
@@ -39,7 +39,7 @@ class _QuizState extends State<Quiz> {
                   ,
                   children: [
                     SizedBox(height: MediaQuery.of(context).size.height*0.04,),
-                    TextS(text:'${questions[initialindex]['quiz']}',size: 2.5,color: textColor),
+                    TextS(text:'${questions[initialindex]['quiz']}',size: 2.1,color: textColor),
                     SizedBox(height:MediaQuery.of(context).size.height*0.03),
                     _options(initialindex, 0),
                     SizedBox(height:MediaQuery.of(context).size.height*0.03),
@@ -75,11 +75,11 @@ class _QuizState extends State<Quiz> {
                         mb.Display(context, "Error",
                             "Please Select an Option", Colors.red);
                       }
-                    }, child: TextS(text:'Next',size: 2.5,color: Colors.white,)),
+                    }, child: TextS(text:'Next',size: 1.8,color: Colors.white,)),
                     SizedBox(height:20),
                     Container(
 
-                        child: Center(child: TextS(text: answer,size: 2.5,color: answerColor))),
+                        child: Center(child: TextS(text: answer,size: 1.5,color: answerColor))),
 
                   ],
                 ),
@@ -141,6 +141,6 @@ class _QuizState extends State<Quiz> {
                   
                     width: 2.5,
                     color: Colors.blue.withOpacity(0.7))),
-            child: TextS(text:'${questions[initialindex]['option'][index]}',size: 2,color: textColor)));
+            child: TextS(text:'${questions[initialindex]['option'][index]}',size: 1.2,color: textColor)));
   }
 }
